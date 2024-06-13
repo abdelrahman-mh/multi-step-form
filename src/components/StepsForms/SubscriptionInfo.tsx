@@ -10,6 +10,7 @@ import {
   Flex,
   Image,
   FormControl,
+  Collapse,
 } from "@chakra-ui/react"
 import {
   subPlanDataOrdered,
@@ -106,11 +107,14 @@ export default function SubscriptionInfo() {
                   ${billingCyclePrices[currentBilledCycle][plan.plan]}/
                   {currentBilledCycle === BillingCycle.Monthly ? "mo" : "yr"}
                 </Text>
-                {currentBilledCycle === BillingCycle.Yearly && (
+                <Collapse
+                  in={currentBilledCycle === BillingCycle.Yearly}
+                  animateOpacity
+                >
                   <Text fontWeight="400" fontSize="14px" color="ui.main">
                     2 months free
                   </Text>
-                )}
+                </Collapse>
               </Box>
             </Flex>
           </RadioCard>
