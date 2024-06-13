@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "lint": "biome check --write --unsafe --no-errors-on-unmatched --files-ignore-unknown=true ./",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "rm -rf ./dist && pnpm build && gh-pages -d dist"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.1",
+    "@types/node": "^20.14.2",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
