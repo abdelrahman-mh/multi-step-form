@@ -24,7 +24,7 @@ const StepperComponent = ({ activeStep, steps }: Props) => {
       <Box
         hideFrom="md"
         bgImage={{
-          base: "url('/images/bg-sidebar-mobile.svg')",
+          base: "url('images/bg-sidebar-mobile.svg')",
           md: "none",
         }}
         bgPosition="center"
@@ -40,7 +40,7 @@ const StepperComponent = ({ activeStep, steps }: Props) => {
       <Box
         h={{ md: "568px" }}
         bgImage={{
-          md: "url('/images/bg-sidebar-desktop.svg')",
+          md: "url('images/bg-sidebar-desktop.svg')",
         }}
         bgPosition="center"
         bgRepeat="no-repeat"

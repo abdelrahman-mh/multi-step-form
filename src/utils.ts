@@ -42,9 +42,9 @@ export const addOnPrices = {
 }
 
 export const subPlanDataOrdered: { plan: SubscriptionPlan; img: string }[] = [
-  { plan: SubscriptionPlan.Arcade, img: "/images/icon-arcade.svg" },
-  { plan: SubscriptionPlan.Advanced, img: "/images/icon-advanced.svg" },
-  { plan: SubscriptionPlan.Pro, img: "/images/icon-pro.svg" },
+  { plan: SubscriptionPlan.Arcade, img: "images/icon-arcade.svg" },
+  { plan: SubscriptionPlan.Advanced, img: "images/icon-advanced.svg" },
+  { plan: SubscriptionPlan.Pro, img: "images/icon-pro.svg" },
 ]
 
 export const addOnsDataOrdered: { addOn: AddOnType; desc: string }[] = [
